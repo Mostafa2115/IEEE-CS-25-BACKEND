@@ -1,11 +1,11 @@
-<h2>What is the database and why does it exist ?</h2>
+<h1>What is the database and why does it exist ?</h1>
 A database is information that's set up for easy access, management and updating. Computer databases typically store aggregations of data records or files that contain information such as sales transactions, customer data, financials and product information.
 
 Databases are used for storing, maintaining and accessing any sort of data. They collect information on people, places or things. This information is gathered in one place so it can be observed and analyzed. Databases can be thought of as an organized collection of information.
 
 Business, government and scientific fields use databases for data storage, analysis and management. Organizations use the data stored in databases to make informed business decisions.
 <hr>
-<h2>What is the SQL</h2>
+<h1>What is the SQL</h1>
 SQL is a standard language for accessing and manipulating databases.
 <br>
 > What is SQL?
@@ -20,7 +20,7 @@ SQL is a standard language for accessing and manipulating databases.
    ,can create new tables in a database ,can create stored procedures in a database ,can create views in a database ,can set permissions on tables, procedures, and views
 </pre>
 <hr>
-<h2>What are the most 5 famous DBs in world now? and why?</h2>
+<h1>What are the most 5 famous DBs in world now? and why?</h1>
 <pre>
   1. Oracle Database
              Oracle Database is one of the oldest and most widely used relational databases in the business world. It is known for its scalability, security and reliability, making it a popular choice for large 
@@ -36,10 +36,10 @@ SQL is a standard language for accessing and manipulating databases.
              MongoDB is a document-oriented NoSQL database that has become very popular for web and mobile applications. 
 </pre>
 <hr>
-<h2>What is RDBMS?</h2>
+<h1>What is RDBMS?</h1>
 - A relational database is a collection of information that organizes data in predefined relationships where data is stored in one or more tables (or "relations") of columns and rows, making it easy to see and understand how different data structures relate to each other.
 <hr>
-<h2>RDBMS VS DBMS</h2>
+<h1>RDBMS VS DBMS</h1>
 <table>
         <tr>
             <th>DBMS</th>
@@ -113,9 +113,25 @@ SQL is a standard language for accessing and manipulating databases.
 <hr>
 <h1>Naming conventions</h1>
 1.Character strings that represent names of database manager objects can contain any of the following: a-z, A-Z, 0-9, @, #, and $.
-2.Unless otherwise noted, names can be entered in lowercase letters; however, the database manager processes them as if they were uppercase.
-3.A database name or database alias is a unique character string containing from one to eight letters, numbers, or keyboard characters from the set described previously.
-4.The name or the alias name of a table or a view is an SQL identifier that is a unique character string 1 to 128 bytes in length. Column names can be 1 to 128 bytes in length.
+<br>2.Unless otherwise noted, names can be entered in lowercase letters; however, the database manager processes them as if they were uppercase.
+<br>3.A database name or database alias is a unique character string containing from one to eight letters, numbers, or keyboard characters from the set described previously.
+<br>4.The name or the alias name of a table or a view is an SQL identifier that is a unique character string 1 to 128 bytes in length. Column names can be 1 to 128 bytes in length.
+<hr>
+<h1>Resources</h1>
+<a herf="https://www.techtarget.com/searchdatamanagement/definition/database" >What is the database and why does it exist</a>
+<br>
+<a herf="https://www.w3schools.com/sql/sql_intro.asp" >What is the SQL</a>
+<br>
+<a herf="https://www.swhosting.com/en/blog/the-5-most-widely-used-databases-worldwide-which-is-the-best-choice-for-my-project" >What are the most 5 famous DBs in world now? and why?</a>
+<br>
+<a herf="https://cloud.google.com/learn/what-is-a-relational-database" >What is RDBMS?</a>
+<br>
+<a herf="https://www.geeksforgeeks.org/difference-between-rdbms-and-dbms/" >RDBMS VS DBMS</a>
+<br>
+<a herf="https://www.geeksforgeeks.org/database-table-and-column-naming-conventions/" >Naming conventions</a>
+<br>
+<hr>
+
 
 
 
