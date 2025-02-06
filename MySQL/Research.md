@@ -118,7 +118,7 @@ SQL is a standard language for accessing and manipulating databases.
 <br>4.The name or the alias name of a table or a view is an SQL identifier that is a unique character string 1 to 128 bytes in length. Column names can be 1 to 128 bytes in length.
 <hr>
 <h1>Resources</h1>
-<a herf="https://www.techtarget.com/searchdatamanagement/definition/database" >What is the database and why does it exist</a>
+<a herf="https://www.techtarget.com/searchdatamanagement/definition/database" target="_blank">What is the database and why does it exist</a>
 <br>
 <a herf="https://www.w3schools.com/sql/sql_intro.asp" >What is the SQL</a>
 <br>
