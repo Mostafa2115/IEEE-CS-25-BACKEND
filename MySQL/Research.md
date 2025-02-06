@@ -1,4 +1,4 @@
-<h2>what is the database and why does it exist ?</h2>
+<h2>What is the database and why does it exist ?</h2>
 A database is information that's set up for easy access, management and updating. Computer databases typically store aggregations of data records or files that contain information such as sales transactions, customer data, financials and product information.
 
 Databases are used for storing, maintaining and accessing any sort of data. They collect information on people, places or things. This information is gathered in one place so it can be observed and analyzed. Databases can be thought of as an organized collection of information.
@@ -110,6 +110,13 @@ SQL is a standard language for accessing and manipulating databases.
             <td>Examples: MySQL, PostgreSQL, SQL Server, Oracle, Microsoft Access, etc.</td>
         </tr>
     </table>
+<hr>
+<h1>Naming conventions</h1>
+1.Character strings that represent names of database manager objects can contain any of the following: a-z, A-Z, 0-9, @, #, and $.
+2.Unless otherwise noted, names can be entered in lowercase letters; however, the database manager processes them as if they were uppercase.
+3.A database name or database alias is a unique character string containing from one to eight letters, numbers, or keyboard characters from the set described previously.
+4.The name or the alias name of a table or a view is an SQL identifier that is a unique character string 1 to 128 bytes in length. Column names can be 1 to 128 bytes in length.
+
 
 
 
