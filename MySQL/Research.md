@@ -103,7 +103,27 @@ A relational database is a collection of information that organizes data in pred
 | **Uses**          | It identifies specific records in the table.     | It prevents duplicate entries in a column, except for a NULL value. |
 
 ---
+# SQL Constraints
 
+SQL constraints are used to specify rules for the data in a table.
+
+Constraints are used to limit the type of data that can go into a table. This ensures the accuracy and reliability of the data in the table. If there is any violation between the constraint and the data action, the action is aborted.
+
+Constraints can be **column level** or **table level**.  
+- **Column level constraints** apply to a column.  
+- **Table level constraints** apply to the whole table.
+
+## Common SQL Constraints
+
+- **NOT NULL** - Ensures that a column cannot have a NULL value.  
+- **UNIQUE** - Ensures that all values in a column are different.  
+- **PRIMARY KEY** - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table.  
+- **FOREIGN KEY** - Prevents actions that would destroy links between tables.  
+- **CHECK** - Ensures that the values in a column satisfy a specific condition.  
+- **DEFAULT** - Sets a default value for a column if no value is specified.  
+- **CREATE INDEX** - Used to create and retrieve data from the database very quickly.  
+
+---
 # Resources
 - [What is the database and why does it exist](https://www.techtarget.com/searchdatamanagement/definition/database)
 - [What is SQL](https://www.w3schools.com/sql/sql_intro.asp)
@@ -111,4 +131,5 @@ A relational database is a collection of information that organizes data in pred
 - [What is RDBMS?](https://cloud.google.com/learn/what-is-a-relational-database)
 - [RDBMS VS DBMS](https://www.geeksforgeeks.org/difference-between-rdbms-and-dbms/)
 - [Naming conventions](https://www.geeksforgeeks.org/database-table-and-column-naming-conventions/)
+- [Primary key vs uniqe key](https://testbook.com/key-differences/difference-between-primary-key-and-unique-key)
 
