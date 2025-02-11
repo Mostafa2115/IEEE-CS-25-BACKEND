@@ -91,6 +91,18 @@ A relational database is a collection of information that organizes data in pred
 4. The name or the alias name of a table or a view is an SQL identifier that is a unique character string 1 to 128 bytes in length. Column names can be 1 to 128 bytes in length.
 
 ---
+# Primary key vs Uniqe key
+| Criteria           | Primary Key                                        | Unique Key                                            |
+|-------------------|-------------------------------------------------|--------------------------------------------------|
+| **Basic Function** | The primary key uniquely identifies each record in the table. | The unique key serves as a unique identifier for records when a primary key is absent. |
+| **NULL Values**    | The primary key cannot store NULL values.        | The unique key can store a null value, but only one NULL value is allowed. |
+| **Purpose**        | It ensures entity integrity.                     | It enforces unique data.                         |
+| **Index Creation** | By default, the primary key creates a clustered index. | The unique key generates a non-clustered index. |
+| **Number of Keys** | Each table can have only one primary key.        | A table can have multiple unique keys.          |
+| **Value Modification** | You cannot modify or delete values in a primary key. | You can modify the values in a unique key. |
+| **Uses**          | It identifies specific records in the table.     | It prevents duplicate entries in a column, except for a NULL value. |
+
+---
 
 # Resources
 - [What is the database and why does it exist](https://www.techtarget.com/searchdatamanagement/definition/database)
