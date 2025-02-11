@@ -1,6 +1,9 @@
 -- First problem (Query the names of all the Japanese cities in the CITY table. The COUNTRYCODE for Japan is JPN)
 Select NAME from CITY where COUNTRYCODE ='JPN'
 
+-- Second problem (Query the following two values from the STATION table: The sum of all values in LAT_N rounded to a scale of 2 decimal places,The sum of all values in LONG_W rounded to a scale of 2 decimal places.
+select round(sum(LAT_N),2.0),round(sum(LONG_W),2.0) from STATION;
+
 -- third problem (Query the list of CITY names from STATION that do not start with vowels. Your result cannot contain duplicates)
 SELECT DISTINCT CITY FROM STATION WHERE CITY NOT LIKE 'A%' AND CITY NOT LIKE 'E%' AND CITY NOT LIKE 'I%' AND CITY NOT LIKE 'O%' AND CITY NOT LIKE 'U%';
 
