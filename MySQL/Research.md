@@ -124,6 +124,13 @@ Constraints can be **column level** or **table level**.
 - **CREATE INDEX** - Used to create and retrieve data from the database very quickly.  
 
 ---
+# MySQL CREATE INDEX Statement
+
+The `CREATE INDEX` statement is used to create indexes in tables.
+
+Indexes are used to retrieve data from the database more quickly than otherwise. The users cannot see the indexes; they are just used to speed up searches/queries.
+
+---
 # Resources
 - [What is the database and why does it exist](https://www.techtarget.com/searchdatamanagement/definition/database)
 - [What is SQL](https://www.w3schools.com/sql/sql_intro.asp)
@@ -132,4 +139,6 @@ Constraints can be **column level** or **table level**.
 - [RDBMS VS DBMS](https://www.geeksforgeeks.org/difference-between-rdbms-and-dbms/)
 - [Naming conventions](https://www.geeksforgeeks.org/database-table-and-column-naming-conventions/)
 - [Primary key vs uniqe key](https://testbook.com/key-differences/difference-between-primary-key-and-unique-key)
+- [SQL constraints](https://www.w3schools.com/mysql/mysql_constraints.asp)
+- [indexing in MySQL](https://www.w3schools.com/mysql/mysql_create_index.asp)
 
