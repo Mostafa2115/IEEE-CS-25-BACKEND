@@ -137,10 +137,11 @@ A many-to-many relationship occurs when multiple records in a table are related 
 When normalizing a database or adding tables to an existing database, we need to be able to relate tables to each other.
 
 There are three ways in which a table can be related to another table:
-
+```
   -**One-to-one**: A record in one table is related to one record in another table.
   -**One-to-many**: A record in one table is related to many records in another table.
   -**Many-to-many**: Multiple records in one table are related to multiple records in another table.
+```
 
 ---
 # Resources
