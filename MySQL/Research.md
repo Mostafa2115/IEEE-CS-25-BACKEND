@@ -138,10 +138,18 @@ When normalizing a database or adding tables to an existing database, we need to
 
 There are three ways in which a table can be related to another table:
 ```
-  -**One-to-one**: A record in one table is related to one record in another table.
-  -**One-to-many**: A record in one table is related to many records in another table.
-  -**Many-to-many**: Multiple records in one table are related to multiple records in another table.
+  -One-to-one: A record in one table is related to one record in another table.
+  -One-to-many: A record in one table is related to many records in another table.
+  -Many-to-many: Multiple records in one table are related to multiple records in another table.
 ```
+
+---
+# Write-ahead logging
+Write-ahead logging is still extremely relevant: it’s a core concept for SQL Server and many other database systems.
+
+The “ahead” in “write-ahead logging” means that SQL Server writes to the transaction log ahead of other database files. When a modification occurs, the change will be made in memory and then written to the transaction log file. If the write to the transaction log file doesn’t complete, the transaction cannot commit.
+
+SQL Server’s database recovery model controls how the write-ahead transaction log is managed in important ways, including how much information is written to the transaction log, and how long data will remain in the transaction log.
 
 ---
 # Resources
