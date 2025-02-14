@@ -162,4 +162,7 @@ SQL Server’s database recovery model controls how the write-ahead transaction 
 - [Primary key vs uniqe key](https://testbook.com/key-differences/difference-between-primary-key-and-unique-key)
 - [SQL constraints](https://www.w3schools.com/mysql/mysql_constraints.asp)
 - [indexing in MySQL](https://www.w3schools.com/mysql/mysql_create_index.asp)
+- [Relations (one to one, one to many, many to many)](https://dzone.com/articles/how-to-handle-a-many-to-many-relationship-in-datab)
+- [Write-ahead logging](https://www.sqlservercentral.com/editorials/what-write-ahead-logging-is-and-why-it-matters)
+
 
