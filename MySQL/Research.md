@@ -131,6 +131,17 @@ The `CREATE INDEX` statement is used to create indexes in tables.
 Indexes are used to retrieve data from the database more quickly than otherwise. The users cannot see the indexes; they are just used to speed up searches/queries.
 
 ---
+# Relations (one to one, one to many, many to many)
+A many-to-many relationship occurs when multiple records in a table are related to multiple records in another table.
+
+When normalizing a database or adding tables to an existing database, we need to be able to relate tables to each other.
+
+There are three ways in which a table can be related to another table:
+  1-One-to-one: A record in one table is related to one record in another table.
+  2-One-to-many: A record in one table is related to many records in another table.
+  3-Many-to-many: Multiple records in one table are related to multiple records in another table.
+
+---
 # Resources
 - [What is the database and why does it exist](https://www.techtarget.com/searchdatamanagement/definition/database)
 - [What is SQL](https://www.w3schools.com/sql/sql_intro.asp)
