@@ -152,6 +152,20 @@ The “ahead” in “write-ahead logging” means that SQL Server writes to the
 SQL Server’s database recovery model controls how the write-ahead transaction log is managed in important ways, including how much information is written to the transaction log, and how long data will remain in the transaction log.
 
 ---
+# Multi-Version Concurrency Control (MVCC)
+
+**Multi-Version Concurrency Control (MVCC)** is a database optimization method that creates redundant copies of records to allow for safe concurrent reading and updating of data. When using MVCC, DBMS reads and writes are not blocked by one another.
+
+**Concurrency control** is a technique that keeps concurrent processes running to avoid read/write conflicts or other irregularities in a database.
+
+Whenever data needs to be updated, instead of replacing the old information with the new one, an MVCC database generates a newer version of the data item.
+
+---
+# MySQL Trigger  
+
+A **MySQL trigger** is a stored program (with queries) which is executed automatically to respond to a specific event such as **insertion, updating,** or **deletion** occurring in a table.
+
+---
 # Resources
 - [What is the database and why does it exist](https://www.techtarget.com/searchdatamanagement/definition/database)
 - [What is SQL](https://www.w3schools.com/sql/sql_intro.asp)
@@ -164,5 +178,7 @@ SQL Server’s database recovery model controls how the write-ahead transaction 
 - [indexing in MySQL](https://www.w3schools.com/mysql/mysql_create_index.asp)
 - [Relations (one to one, one to many, many to many)](https://dzone.com/articles/how-to-handle-a-many-to-many-relationship-in-datab)
 - [Write-ahead logging](https://www.sqlservercentral.com/editorials/what-write-ahead-logging-is-and-why-it-matters)
+- [Multi-Version Concurrency Control](https://www.geeksforgeeks.org/what-is-multi-version-concurrency-control-mvcc-in-dbms/)
+- [MySQL Trigger](https://www.geeksforgeeks.org/different-types-of-mysql-triggers-with-examples/)
 
 
