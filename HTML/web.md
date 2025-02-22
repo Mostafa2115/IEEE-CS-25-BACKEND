@@ -6,7 +6,6 @@ This theory is not essential to writing web code in the short term, but before l
 
 ---
 # HTTP VS HTTPS
-# Summary of Differences: HTTP vs. HTTPS
 
 ## HTTP vs. HTTPS Comparison
 
