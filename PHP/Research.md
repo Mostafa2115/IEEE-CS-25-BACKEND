@@ -26,3 +26,6 @@
 
 ---
 # Resources
+- [What is PHP?](https://www.w3schools.com/php/php_intro.asp)
+- [what r the three main error types in PHP](https://www.geeksforgeeks.org/php-types-of-errors/)
+- [echo vs print](https://www.w3schools.com/php/php_echo_print.asp)
