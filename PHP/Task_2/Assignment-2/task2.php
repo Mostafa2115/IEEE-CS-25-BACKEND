@@ -1,4 +1,4 @@
-<? php
+<?php
 $index=0;
 while($index<=20)
 {
