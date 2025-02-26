@@ -1,4 +1,4 @@
-<? php
+<?php
 $start = 10;
 $end = 0;
 $stop = 3;
