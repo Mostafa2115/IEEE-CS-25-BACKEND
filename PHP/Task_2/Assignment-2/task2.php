@@ -19,6 +19,9 @@ do{
 
 for ($index=1;$index<=20;$index++)
 {
-  echo "$index<br>";
+  if($index%2==0)
+  {
+     echo "$index<br>";
+  }
 }
 ?>
