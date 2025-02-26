@@ -1,4 +1,4 @@
-<? php
+<?php
   // Test Case 1
 $a = 100;
 $b = 200;
