@@ -23,9 +23,45 @@
   - `echo` can take **multiple parameters** (though this is rarely used), while `print` can take only **one argument**.
   - `echo` is **marginally faster** than `print`.
 
+---
+# Scripting Language vs Programming Language
+
+| Scripting Language | Programming Language |
+|--------------------|----------------------|
+| A scripting language is a language that uses a naive method to bring codes to a runtime environment. | A programming language is a language used by humans to navigate their communication with computers. |
+| These are made for a particular runtime environment. | Programming languages are of three types: low-level, middle-level, and high-level programming languages. |
+| They are used to create dynamic web applications. | Programming languages are used to write computer programs. |
+| Scripting languages contain different libraries. | They are high-speed languages. |
+| **Examples:** Bash, Ruby, Python, JavaScript, etc. | **Examples:** C++, Java, PHP (High-level), etc. |
+| Scripting languages can be easily ported among various operating systems. | Programming languages are translation-free languages. |
+| These languages require a host. | These languages are self-executable. |
+| Do not create a `.exe` file. | These generate `.exe` files. |
+| Most scripting languages are interpreted languages. | Most programming languages are compiled languages. |
+| All scripting languages are programming languages. | All programming languages are not scripting languages. |
+| It is easier to learn than a programming language. | It can take a significant amount of time to learn. |
+| It is less code-intensive when compared with a programming language. | It is code-intensive. |
+| It does not create any binary files. | It does create binary files. |
+| It is easy for beginners to write and understand the code. | It is difficult for beginners to write and understand the code. |
+| It is run inside another program. | It is independently run. |
+| It needs fewer lines of code. | It needs numerous lines of code. |
+| It has low maintenance cost. | It has high maintenance cost. |
+
+---
+# Static Typing vs Dynamic Typing
+
+| Aspect             | Static Typing                          | Dynamic Typing                         |
+|-------------------|--------------------------------|--------------------------------|
+| **Determination Time** | Determined at compile-time. | Determined at runtime. |
+| **Error Detection** | Errors caught during compilation. | Errors may appear during program execution. |
+| **Performance** | Typically faster due to compile-time optimizations. | Possible overhead from runtime type-checks. |
+| **Coding Verbosity** | Requires explicit type declarations. | Concise; types aren’t specified explicitly. |
+| **Flexibility** | Variables bound to one type. | Variable types can change during execution. |
+| **Type Safety** | High type safety through early error detection. | Some type safety traded off for flexibility. |
 
 ---
 # Resources
 - [What is PHP?](https://www.w3schools.com/php/php_intro.asp)
 - [what r the three main error types in PHP](https://www.geeksforgeeks.org/php-types-of-errors/)
 - [echo vs print](https://www.w3schools.com/php/php_echo_print.asp)
+- [Scripting Language vs Programming Language](https://www.geeksforgeeks.org/whats-the-difference-between-scripting-and-programming-languages/)
+- [Static Typing vs Dynamic Typing](https://www.bairesdev.com/blog/static-vs-dynamic-typing/)
