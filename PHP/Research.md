@@ -59,9 +59,20 @@
 | **Type Safety** | High type safety through early error detection. | Some type safety traded off for flexibility. |
 
 ---
+# What is the difference between for and foreach loop in PHP?
+
+| for loop | foreach loop |
+|----------|-------------|
+| The iteration is clearly visible. The block of code is repeated as long as the condition is met or the counter meets a specific value. | The iteration is hidden. The block of code is repeated until iterating over the array is completed. |
+| Good performance. | Better performance. |
+| The stop condition is specified easily. | The stop condition has to be explicitly specified. |
+| Upon working with collections, it needs the usage of the count() function. | It can simply work without the usage of the count() method. |
+
+---
 # Resources
 - [What is PHP?](https://www.w3schools.com/php/php_intro.asp)
 - [what r the three main error types in PHP](https://www.geeksforgeeks.org/php-types-of-errors/)
 - [echo vs print](https://www.w3schools.com/php/php_echo_print.asp)
 - [Scripting Language vs Programming Language](https://www.geeksforgeeks.org/whats-the-difference-between-scripting-and-programming-languages/)
 - [Static Typing vs Dynamic Typing](https://www.bairesdev.com/blog/static-vs-dynamic-typing/)
+- [What is the difference between for and foreach loop in PHP?](https://www.geeksforgeeks.org/what-is-the-difference-between-for-and-foreach-loop-in-php/)
