@@ -69,6 +69,138 @@
 | Upon working with collections, it needs the usage of the count() function. | It can simply work without the usage of the count() method. |
 
 ---
+## PHP Sessions and Cookies
+
+### **Sessions**
+A **session** is a way to store information (in variables) to be used across multiple pages. When a user visits a website and starts a new session:
+
+1. The **server** creates a **unique session ID** and stores it in a **cookie** on the user’s computer.
+2. The server also creates a **file** on the server to store the session variables for that user.
+3. The **session ID** in the cookie is used to **identify** the user’s session on the server.
+4. When the user navigates to a different page, the **session ID** is sent back to the server, and the server retrieves the corresponding session variables.
+
+#### **Usage of Sessions**
+Sessions are useful for storing **temporary data** that is specific to a single user and a single browser session. Examples include:
+- Storing a user’s **shopping cart** items.
+- Keeping track of **login status**.
+
+
+### **Cookies**
+A **cookie** is a small piece of data stored in a user’s web browser. It can hold information such as **user preferences** or **login details**.
+
+#### **How Cookies Work**
+1. When a user visits a website, the **server sends a cookie** to the user’s browser.
+2. The **browser stores** the cookie.
+3. When the user **returns** to the website, the **server accesses the cookie** and uses the stored information.
+
+#### **Usage of Cookies**
+Cookies are used for storing **longer-term data** that needs to persist across **multiple sessions**. Examples include:
+- Remembering a user’s **preferred language** or **theme**.
+- Storing **authentication tokens** for automatic login.
+
+#### **Cookie Limitations**
+- Stored as **files** on the user’s computer.
+- Can remain for a specified duration unless deleted by the user.
+- **Limited in size** (typically **4KB** or less).
+
+### **Using PHP Sessions**
+To use **sessions** in PHP, you must start a session using the `session_start()` function. This function **must be called before** any output is sent to the browser, so it is usually placed at the **top** of the PHP script.
+
+```php
+<?php
+// Start a session
+session_start();
+
+// Store session variables
+$_SESSION["username"] = "JohnDoe";
+$_SESSION["email"] = "john@example.com";
+
+// Retrieve session variables
+echo "Username: " . $_SESSION["username"];
+?>
+```
+---
+## PHP Sessions and Cookies
+
+### **Sessions**
+
+A **session** is a way to store information (in variables) to be used across multiple pages. When a user visits a website and starts a new session:
+
+1. The **server** creates a **unique session ID** and stores it in a **cookie** on the user’s computer.
+2. The server also creates a **file** on the server to store the session variables for that user.
+3. The **session ID** in the cookie is used to **identify** the user’s session on the server.
+4. When the user navigates to a different page, the **session ID** is sent back to the server, and the server retrieves the corresponding session variables.
+
+#### **Usage of Sessions**
+
+Sessions are useful for storing **temporary data** that is specific to a single user and a single browser session. Examples include:
+
+- Storing a user’s **shopping cart** items.
+- Keeping track of **login status**.
+
+---
+
+### **Cookies**
+
+A **cookie** is a small piece of data stored in a user’s web browser. It can hold information such as **user preferences** or **login details**.
+
+#### **How Cookies Work**
+
+1. When a user visits a website, the **server sends a cookie** to the user’s browser.
+2. The **browser stores** the cookie.
+3. When the user **returns** to the website, the **server accesses the cookie** and uses the stored information.
+
+#### **Usage of Cookies**
+
+Cookies are used for storing **longer-term data** that needs to persist across **multiple sessions**. Examples include:
+
+- Remembering a user’s **preferred language** or **theme**.
+- Storing **authentication tokens** for automatic login.
+
+#### **Cookie Limitations**
+
+- Stored as **files** on the user’s computer.
+- Can remain for a specified duration unless deleted by the user.
+- **Limited in size** (typically **4KB** or less).
+
+---
+
+### **Using PHP Sessions**
+
+To use **sessions** in PHP, you must start a session using the `session_start()` function. This function **must be called before** any output is sent to the browser, so it is usually placed at the **top** of the PHP script.
+
+```php
+<?php
+// Start a session
+session_start();
+
+// Store session variables
+$_SESSION["username"] = "JohnDoe";
+$_SESSION["email"] = "john@example.com";
+
+// Retrieve session variables
+echo "Username: " . $_SESSION["username"];
+?>
+```
+
+---
+## PHP Error Handling
+
+### **Introduction**
+
+When creating scripts and web applications, **error handling** is an important part. If your code lacks error checking, your program may appear unprofessional and be vulnerable to security risks.
+
+This tutorial covers some of the most common error handling methods in PHP.
+
+### **Error Handling Methods**
+
+We will show different error handling techniques:
+
+1. **Simple "die()" statements**
+2. **Custom errors and error triggers**
+3. **Error reporting**
+
+---
 # Resources
 - [What is PHP?](https://www.w3schools.com/php/php_intro.asp)
 - [what r the three main error types in PHP](https://www.geeksforgeeks.org/php-types-of-errors/)
@@ -76,3 +208,5 @@
 - [Scripting Language vs Programming Language](https://www.geeksforgeeks.org/whats-the-difference-between-scripting-and-programming-languages/)
 - [Static Typing vs Dynamic Typing](https://www.bairesdev.com/blog/static-vs-dynamic-typing/)
 - [What is the difference between for and foreach loop in PHP?](https://www.geeksforgeeks.org/what-is-the-difference-between-for-and-foreach-loop-in-php/)
+- [PHP Sessions and Cookies](https://www.geeksforgeeks.org/what-are-the-difference-between-session-and-cookies-in-php/)
+- [PHP Error Handling](https://www.w3schools.com/PHP/php_error.asp)
