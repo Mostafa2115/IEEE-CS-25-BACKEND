@@ -64,9 +64,74 @@ If a class needs to **inherit multiple behaviors**, **OOP traits** provide a sol
 Traits are declared using the **trait** keyword.
 
 ---
+# Understanding Late Static Binding in PHP
+
+In PHP, programs are saved and then directly run on the browser. The script is executed through a web server, and we receive the output. We don’t manually compile PHP programs, but that doesn’t mean they are never compiled. The PHP interpreter handles this process for us.
+
+## Two Phases of Execution
+
+There are two phases in PHP execution:
+
+1. **Compile-time** – The normal variables are replaced with their values.
+2. **Run-time** – The `static` keyword properties are assigned their values.
+
+## Late Static Binding in PHP
+
+When overriding a property in a child class and creating an instance of the child class, the late static binding concept is used by writing the `static` keyword before using the property. 
+
+Whenever the PHP interpreter compiles a function, if it encounters a `static` property, it postpones its resolution until runtime. At runtime, the property gets its value from the function it is being called from. This mechanism is known as **late static binding**.
+
+---
+# MySQLi vs. PDO in PHP
+
+If you need a short answer, it would be: **"Whatever you like."**
+
+Both **MySQLi** and **PDO** have their advantages:
+
+- **PDO** supports 12 different database systems, whereas **MySQLi** works only with MySQL.
+- If you need to switch your project to another database, **PDO** makes the process easier. You only need to update the connection string and a few queries. With **MySQLi**, you would have to rewrite the entire code, including queries.
+- Both are **object-oriented**, but **MySQLi** also provides a **procedural API**.
+- Both support **Prepared Statements**, which protect against **SQL injection** and enhance web application security.
+
+### Summary:
+| Feature       | MySQLi | PDO |
+|--------------|--------|-----|
+| Database Support | Only MySQL | Multiple databases |
+| API Type | Object-oriented & Procedural | Object-oriented |
+| Prepared Statements | ✅ | ✅ |
+| Ease of Switching Databases | ❌ (Not easy) | ✅ (Easy) |
+
+Ultimately, the choice depends on your project requirements.
+
+---
+# Model-View-Controller (MVC) Framework
+
+The **Model-View-Controller (MVC)** framework is an **architectural design pattern** that separates an application into three main logical components: **Model, View, and Controller**. Each component is designed to handle specific aspects of application development.
+
+## Key Features of MVC:
+- **Separation of Concerns**: Isolates business logic from the presentation layer.
+- **Scalability**: Makes applications more extensible and maintainable.
+- **Industry Standard**: Frequently used in web development frameworks.
+- **Supports Mobile Development**: Used in designing mobile applications.
+
+## History and Purpose
+MVC was created by **Trygve Reenskaug** to address the complexity of users controlling large data sets. The goal was to divide a **large application** into **specific sections**, each with a defined role.
+
+## Components of MVC:
+1. **Model**: Manages data, logic, and rules.
+2. **View**: Displays information to users.
+3. **Controller**: Handles user input and updates the Model and View.
+
+Originally used for **desktop GUI applications**, MVC is now widely adopted in **web and mobile development** for its flexibility and structure.
+
+---
 # Resources
 - [Who invent OOP and why](https://en.wikipedia.org/wiki/Object-oriented_programming)
 - [Encapsulation and Abstraction](https://www.tutorialspoint.com/explain-difference-between-abstraction-and-encapsulation-in-php)
 - [Inheritance in OOP](https://www.w3schools.com/php/php_oop_inheritance.asp)
 - [PHP Interfaces & Polymorphism](https://www.geeksforgeeks.org/how-to-implement-polymorphism-in-php/)
 - [Traits in PHP](https://www.w3schools.com/php/php_oop_traits.asp)
+- [Late static binding & how it works](https://www.geeksforgeeks.org/what-is-late-static-bindings-in-php/)
+- [Using OOP with MySQL (PDO & MySQLi)](https://www.w3schools.com/php/php_mysql_connect.asp)
+- [MVC Architecture](https://www.geeksforgeeks.org/mvc-framework-introduction/)
+
