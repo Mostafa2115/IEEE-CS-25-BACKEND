@@ -93,10 +93,51 @@ The idea of ORM is based on abstraction. The ORM mechanism allows developers to:
 In summary, ORM bridges the gap between relational databases and object-oriented programming, making development faster, more intuitive, and less error-prone.
 
 ---
+# Eloquent: Relationships
+
+## Introduction
+
+Database tables are often related to one another. For example, a blog post may have many comments, or an order could be related to the user who placed it. Eloquent makes managing and working with these relationships easy, and supports several different types of relationships:
+
+- **One To One**  
+- **One To Many**  
+- **Many To Many**  
+- **Has Many Through**  
+- **Polymorphic Relations**  
+- **Many To Many Polymorphic Relations**
+
+## Defining Relationships
+
+Eloquent relationships are defined as methods on your Eloquent model classes. Since, like Eloquent models themselves, relationships also serve as powerful query builders, defining relationships as methods provides powerful method chaining and querying capabilities. 
+
+For example, we may chain additional constraints on this `posts` relationship:
+
+```php
+$user->posts()->where('active', 1)->get();
+```
+
+---
+# What is the N+1 Query Problem?
+
+The **N+1 query problem** occurs when an application makes one initial query to the database followed by an additional query for each result obtained from the first query. This typically happens in object-relational mapping (ORM) frameworks when dealing with relationships between models.
+
+For instance, imagine a scenario in a Laravel application where you need to display all posts and their associated comments on a webpage. An intuitive approach might involve loading all posts first and then iterating through each post to load its related comments:
+
+```php
+$posts = Post::all();
+
+foreach ($posts as $post) {
+    $comments = $post->comments; // Additional query for each post
+}
+```
+
+---
 # Resources 
 - [Request lifecycle](https://laravel.com/docs/12.x/lifecycle)
 - [Routing in Laravel](https://laravel.com/docs/12.x/routing)
 - [Facades](https://laravel.com/docs/11.x/facades)
 - [Blade Templates and how it works](https://dev.to/icornea/laravel-blade-template-engine-a-beginners-guide-54bi)
 - [What is the ORM ,why it is so useful](https://www.theserverside.com/definition/object-relational-mapping-ORM)
+- [Defining relationships in Eloquent models](https://laravel.com/docs/5.5/eloquent-relationships)
+- [The N+1 query problem in Laravel](https://loadforge.com/guides/optimizing-laravel-applications-by-detecting-n1-queries)
 
