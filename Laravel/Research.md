@@ -132,6 +132,96 @@ foreach ($posts as $post) {
 ```
 
 ---
+# What is CSRF?
+
+**Cross-site request forgery (CSRF)** attacks are common web application vulnerabilities that take advantage of the trust a website has already granted a user and their browser. In a CSRF attack, an attacker typically uses social engineering techniques to manipulate an authenticated user into executing malicious actions without their awareness or consent. Simply by clicking on a legitimate-seeming link in an email or chat message, the user may unwittingly give an attacker the ability to co-opt their identity and access privileges.
+
+From that point on, the attacker can impersonate their victim and use their account to perform anything from a harmless prank on an unsuspecting user to an illicit money transfer that drains the victim’s bank account. If the targeted user is a web administrator with broad access privileges, a CSRF attack can compromise the entire web application.
+
+When successful, a CSRF attack can be harmful both to the business operating the site and the user who has accessed it. Such exploits can negatively impact client relationships, damage customer confidence, and result in instances of fraud or theft of financial resources. CSRF attacks have been employed against major services and sites such as Gmail and Facebook, among others.
+
+CSRF is also known by a number of other names, including **XSRF**, **"sea surf"**, **session riding**, **cross-site reference forgery**, and **hostile linking**. Microsoft refers to this type of attack as a **one-click attack** in its threat modeling process and in many places in its online documentation. CSRF is considered a flaw under the **A5 category in the OWASP Top 10**.
+
+---
+
+# How Does CSRF Work?
+
+When users attempt to access a site, their browser often automatically includes any credentials associated with the site along with their request so that the login process is more convenient. These credentials can include the user's **session cookie**, **basic authentication credentials**, **IP address**, **Windows domain credentials**, and so on. Once the user is authenticated to the site, however, the site has no way to distinguish a forged request from a legitimate user request.
+
+By co-opting the victim’s identity and access via a CSRF attack, an attacker can make a user perform unintended actions. Typically, the attacker persuades a victim to click on a link by using a social-engineering technique via an email, chat message, or a similar form of communication. The user may then unknowingly encounter malicious HTML or JavaScript code in the email message or after loading a site page that requests a specific task URL. The task then executes, either directly or by using a cross-site scripting flaw. The user is often unaware that anything has happened until after a malicious action has occurred.
+
+CSRF attacks usually target functions that cause a **state change on the server** but can also be used to access sensitive data. Upon performing a successful CSRF attack on a victim’s account, a malicious actor can:
+
+- Initiate a transfer of funds  
+- Purchase an item  
+- Place a product in a shopping cart  
+- Alter account information such as a shipping address  
+- Change a password  
+- Use any other function that is available on the vulnerable website
+ 
+---
+# Quick Intro to Livewire
+
+**Livewire** is a full-stack framework in Laravel created by **Caleb Porzio** that makes it easy to create **reactive interfaces without writing any JavaScript** — that's right, **no JavaScript**, all in PHP. This means developers can leverage the power of Laravel and Blade templates to build **dynamic UIs** that respond to user actions such as form submissions, scrolling, mouse movements, or button clicks — all **without reloading the page**.
+
+As a result, users enjoy a smoother, more fluid experience when interacting with web applications built using Livewire, much like they would with traditional front-end frameworks.
+
+---
+
+## Sample Livewire Snippets
+
+### 📦 Implementation Logic
+
+```php
+<?php
+
+namespace App\Http\Livewire;
+
+use Livewire\Component;
+
+class CountButton extends Component
+{
+    public $count = 0;
+
+    public function increment() {
+        $this->count++;
+    }
+
+    public function render()
+    {
+        return view('livewire.count-button');
+    }
+}
+```
+## Blade Template
+```
+<div>
+    You've clicked me {{ $count }} times
+    <button wire:click="increment" class="p-4 bg-green">
+        Click Me!
+    </button>
+</div>
+```
+## Page Integration
+```
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    @livewireStyles
+</head>
+
+<body class="antialiased">
+
+    <livewire:count-button />
+
+    @livewireScripts
+</body>
+
+</html>
+```
+
+---
 # Resources 
 - [Request lifecycle](https://laravel.com/docs/12.x/lifecycle)
 - [Routing in Laravel](https://laravel.com/docs/12.x/routing)
@@ -140,4 +230,6 @@ foreach ($posts as $post) {
 - [What is the ORM ,why it is so useful](https://www.theserverside.com/definition/object-relational-mapping-ORM)
 - [Defining relationships in Eloquent models](https://laravel.com/docs/5.5/eloquent-relationships)
 - [The N+1 query problem in Laravel](https://loadforge.com/guides/optimizing-laravel-applications-by-detecting-n1-queries)
+- [What is the XSRF or CSRF ... is there a difference between them??](https://www.rapid7.com/fundamentals/cross-site-request-forgery/)
+- [What is Livewire?](https://medium.com/@developer.olly/an-overview-of-how-livewire-works-85395746d10a)
 
